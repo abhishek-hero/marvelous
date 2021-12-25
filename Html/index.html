@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/main.css" />
+    <link rel="shortcut icon" href="#">
+    <title>Marvel Universe</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navigator-div">
+            <a href="../Html/index.html">
+                <p class="page-names">Marvel</p>
+            </a>
+        </div>
+    </nav>
+
+    <div class="audio">
+
+        <audio id='song' src="../ragnorok.mp3" type='audio/mp3'></audio>
+        <div>
+            <img id="audio" src="../play.png" alt="audio">
+        </div>
+    </div>
+
+    <div class="main-box">
+
+        <div class="input-div">
+            <input oninput="debounce(searchChar, 300)" type="text" id="characterName"
+                placeholder="Enter character name">
+            <button id="searchbtn">Search</button>
+        </div>
+
+
+        <div id="showData-div">
+        </div>
+
+    </div>
+</body>
+<script src="../JS/main.js"></script>
+
+</html>
